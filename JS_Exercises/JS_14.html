@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        prompt("Enter the name of a product !");
+        var value = parseFloat(prompt("Enter the product's value !"));
+
+        for (var i = 1; i <= 10; i++) {
+            var price = (value * (1 - 0.05 * i)).toFixed(2);
+            document.write(i + " X " + price + " = " + (i * price).toFixed(2) + "<br>");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

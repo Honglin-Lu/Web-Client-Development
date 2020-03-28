@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var number1 = parseInt(prompt("Please enter the first number !"));
+        var number2 = parseInt(prompt("Please enter the second number !"));
+        var calculation = parseInt(prompt("Please enter a calculation(1 for sum,2 for subtraction,3 for multiplication and 4 for division)"));
+        var result;
+        switch (calculation) {
+            case 1:
+                result = number1 + number2;
+                break;
+            case 2:
+                result = number1 - number2;
+                break;
+            case 3:
+                result = number1 * number2;
+                break
+            case 4:
+                result = number1 / number2;
+                break
+            default:
+                result = "invalid calculation";
+        }
+
+        alert("The result is " + result);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

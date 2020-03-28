@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CellSpan</title>
+    <style>
+        table, th, td {
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Cel that spans two collums</h2>
+    <p> To make a cell span more than one column, use colspan attribute</p>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+
+        <tr>
+            <td>Alex</td>
+            <td>8398038023</td>
+            <td>4394839489</td>
+
+        </tr>
+    </table>
+    <h2>Another table to rowspan</h2>
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+            <th>Savings for holiday！</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+            <td rowspan="2">$50</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$80</td>
+        </tr>
+    </table>
+
+    <br />
+    <table >
+        <tr>
+            <td>Quick</td>
+            <td colspan="2">brown fox</td>
+            <td>jumps</td>
+        </tr>
+        <tr>
+            <td rowspan="3">over the</td>
+            <td>lazy</td>
+            <td>dog</td>
+            <td>and</td>
+
+        </tr>
+        <tr>
+            <td>then</td>
+            <td>it</td>
+            <td>fall</td>
+        </tr>
+        <tr>
+            <td colspan="3">prey to a hunter</td>
+ 
+        </tr>
+
+    </table>
+
+</body>
+</html>

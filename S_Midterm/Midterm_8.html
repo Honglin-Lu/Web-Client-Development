@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        
+        function Multiply() {
+            var n1 = parseFloat(document.getElementById("number1").value);
+            var n2 = parseFloat(document.getElementById("number2").value);
+            var multi = (n1 * n2).toFixed(2);
+            document.getElementById("result").innerHTML = multi;
+        }
+        function Divide() {
+            var n1 = parseFloat(document.getElementById("number1").value);
+            var n2 = parseFloat(document.getElementById("number2").value);
+            var divi = (n1 / n2).toFixed(2);
+            document.getElementById("result").innerHTML = divi;
+        }
+    </script>
+</head>
+<body>
+    <span>1st Number :</span><input type="text" id="number1" /><br />
+    <span>2nd Number :</span><input type="text" id="number2"/><br />
+    <button onclick="Multiply()">Multiply</button>
+    <button onclick="Divide()">Divide</button>
+    <p>The Result Is:</p>
+    <p id="result"></p>
+</body>
+</html>

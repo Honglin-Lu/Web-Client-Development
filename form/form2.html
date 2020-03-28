@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        fieldset{
+            border:none;
+            font-size:25px;
+            font-family: 'Arial Narrow';
+            font-weight:700;
+            padding-top:20px;
+        }
+        fieldset span{
+            width:35px;
+            height:35px;
+            background-color: #1abc9c;
+            color:white;
+            display:inline-block;
+            text-align:center;
+            line-height:35px;
+            font-size:20px;
+            margin-right:10px;
+            border-radius:50% 50% 50% 0;
+
+        }
+        fieldset p {
+            font-size: 16px;
+            margin-bottom: 5px;
+         }
+        form{
+            width:700px;
+            margin:0 auto;
+        }
+        input{
+            width:690px;
+            height:40px;
+            background-color:#e8eeef;
+            border:none;
+            margin-bottom:35px;
+            border-radius:5px;
+            font-size:16px;
+            font-family: sans-serif;
+            color:dimgray;
+            line-height:40px;
+            padding-left:10px;
+        }
+        textarea {
+            width: 680px;
+            height: 42px;
+            padding: 10px;
+            background-color: #e8eeef;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family:   sans-serif;
+            color: dimgray;
+            margin-bottom: 15px;
+        }
+        select {
+            width: 698px;
+            height: 40px;
+            background-color: #e8eeef;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            padding-left: 10px;
+            color: dimgray;
+            font-size: 16px;
+            font-family:  sans-serif;
+        }
+
+        .apply {
+            color: white;
+            background-color: #1abc9c;
+            width: 730px;
+            height: 70px;
+            border-radius: inherit;
+            margin-top: 18px;
+            margin-left: 5px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><span>1</span>Candidate Info</legend>
+            <input type="text" placeholder="Your Name *" />
+            <input type="text" placeholder="Your Email *" />
+            <textarea placeholder="About yourself"></textarea>
+            <p>Interests:</p>
+            <select name="interests" size="1">
+                <optgroup label="Outdoors">
+                    <option value="fishkeeping">Fishkeeping</option>
+                    <option value="climbing">Climbing</option>
+                </optgroup>
+
+                <optgroup label="Indoors">
+                    <option value="reading">Reading</option>
+                    <option value="boxing">Boxing</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><span>2</span>Additional Info</legend>
+            <textarea placeholder="About Your School"></textarea>
+        </fieldset>
+        <input type="submit" value="Apply" class="apply"/>
+    </form>
+</body>
+</html>

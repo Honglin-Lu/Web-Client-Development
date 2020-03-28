@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hello World</title>
+    <style>
+        legend {
+            padding: 10px;
+            border: 0px;
+        }
+
+        fieldset {
+            margin: auto;
+            width: 400px;
+            border: dotted;
+            padding: 10px;
+        }
+
+        /*input[type=text] {
+            border: none;
+            border-bottom: ridge;
+        }*/
+    </style>
+    <script type="text/javascript" src="userAccount.js"></script>
+</head>
+<body onload="GetCookies()">
+    <form>
+        <fieldset>
+            <legend style="color:white;background-color:darkgray;">
+                Cookie Confirmation :)
+            </legend>
+            <label for="userid">ID(7 digits):</label>
+            <span id="userid"></span>
+            <br />
+            <br />
+            <label for="firstname">First Name:</label>
+            <span id="firstname"></span>
+            <br />
+            <br />
+            <label for="lastname">Last Name:</label>
+            <span id="lastname"></span>
+            <br />
+            <br />
+            <label for="email">Email:</label>
+            <span id="email"></span>
+            <br />
+            <br />
+            
+        </fieldset>
+    </form>
+</body>
+</html>

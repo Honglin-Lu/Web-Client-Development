@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="login" id="login">
+        <table align="center" border="0" cellpadding="5" cellspacing="5" width="520px">
+            <!--<tr align="center" valign="top"></tr>-->
+            <caption align="center" style="font-size:32px">LaSalle College is LIVE !!</caption>
+            <tr>
+                <td width="28%">Username:</td>
+                <td><input type="text" name="username" style="width:300px" /></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" style="width:300px" /></td>
+            </tr>
+            <tr>
+                <td>City of Employment:</td>
+                <td><input type="text" name="city of employment" style="width:300px" /></td>
+            </tr>
+            <tr>
+                <td>Web server:</td>
+                <td>
+                    <select size="1" name="web server">
+                        <option style="display:none">--- Choose a server ---</option>
+                        <option value="Apache">Apache</option>
+                        <option value="Nginx">Nginnx</option>
+                        <option value="Tomcat">Tomcat</option>
+                    </select>
+                </td>
+            </tr>
+            <tr colspan="2" height="25px"></tr>
+            <tr>
+                <td>Please specify your role:</td>
+                <td>
+                    <label><input type="radio" name="admin" />Admin</label><br />
+                    <label><input type="radio" name="engineer" />Engineer</label><br />
+                    <label><input type="radio" name="manager" />Manager</label><br />
+                    <label><input type="radio" name="guest" />GUest</label><br />
+                </td>
+            </tr>
+            <tr colspan="2" height="25px"></tr>
+
+            <tr>
+                <td>Single Sign-on to the following:</td>
+                <td>
+                    <label><input type="checkbox" name="mail" />Mail</label><br />
+                    <label><input type="checkbox" name="payroll" />Payroll</label><br />
+                    <label><input type="checkbox" name="self-service" />Self-service</label><br />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="padding-left:20px">
+                    <input type="submit" value="Login" />
+                    <input type="reset" value="Reset" />
+
+                </td>
+            </tr>
+        </table> 
+    </form>
+</body>
+</html>

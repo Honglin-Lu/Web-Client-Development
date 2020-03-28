@@ -1,0 +1,76 @@
+﻿/* Setup Fonts*/
+@font-face {
+    font-family:fontTitle;
+    src:url("../fonts/Monster Twenty.otf")
+}
+
+/* Standars */
+*{
+    font : 14px sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+/* Standars */
+body{
+    background-image:url("../images/fundo.jpg");
+    background-size:cover;
+}
+
+/* CSS form */
+form{
+    background-color: white;
+    width :500px;
+    margin :50px auto;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+form h1{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: fontTitle;
+    letter-spacing: 6px;
+}
+
+form input[type=text],
+form input[type=password]
+{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 470px;
+    transition: border-bottom-color 0.5s;
+    margin-bottom: 30px;
+}
+
+form input[type=text]:focus,
+form input[type=password]:focus{
+    border-bottom-color: #ff00dc;
+}
+
+form input[type=submit]{
+    background:linear-gradient( rgb(191, 63, 127) , rgb(63, 191, 191) );
+    padding: 10px 50px;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align:center;
+    margin-left: 170px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.social{
+    border-top:1px solid #ccc;
+    margin-top: 6px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social img{
+    width: 50px;
+}

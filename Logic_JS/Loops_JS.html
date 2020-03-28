@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        // Obtain the value of the investment
+        var value = parseInt(prompt("Inform the amount that you like to invest"));
+
+        // Obtain the time that I want to invest in month 
+        var time = parseInt(prompt("Inform the time that you like to invest"));
+
+        for (var index = 1; index <= time; index++) {
+            var gain = value * 0.05;
+            value += gain;
+            document.write(index + " month " + value.toFixed(2) + "<br>");
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

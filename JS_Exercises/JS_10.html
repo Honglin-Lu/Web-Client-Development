@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        var choice = prompt("Choose one product from the list: a) Pizza b )Hamburger c )Lasagna d )Cheese Bread e )Pastel");
+        var quantity = parseInt(prompt("Enter the quantity of the product !"));
+        switch (choice) {
+            case 'a':
+                var total = (8 * quantity).toFixed(2);
+                break;
+            case 'b':
+                var total = (12 * quantity).toFixed(2);
+                break;
+            case 'c':
+                var total = (9 * quantity).toFixed(2);
+                break;
+            case 'd':
+                var total = (2.5 * quantity).toFixed(2);
+                break;
+            case 'e':
+                var total = (4 * quantity).toFixed(2);
+                break;
+            default:
+
+        }
+
+        alert("The total money is " + total + " $");
+        var pay = parseFloat(prompt("Enter the money you paid !"));
+
+        if (pay >= total) {
+            alert("Your change is " + (pay - total) + " $");
+        
+        } else {
+            alert("You money is not enough !");
+        }
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

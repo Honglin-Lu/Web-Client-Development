@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body style="margin:0px;font-family:Verdana, Geneva, Tahoma, sans-serif;">
+    <div style="width:100%;background-color:darkgray;height:100px;padding-left:50px;line-height:100px;">
+        <h2>Tutorial</h2>
+    </div>
+    <div style="background-color:lightgray;width:35%;height:220px;padding-top:5px;float:left;">
+        <ul style="list-style:none;padding-left:50px;padding-top:30px;">
+            <li style="padding:5px"><a href="#" style="color:black">Home</a></li>
+            <li style="padding:5px"><a href="#" style="color:black">About</a></li>
+            <li style="padding:5px"><a href="#" style="color:black">Contact</a></li>
+
+        </ul>
+    </div>
+    <div style="float:left ; height:220px;width:500px; padding-left:20px;">
+        <h2 style="margin-top:50px;">Welcome to our site</h2>
+        <p>Here you will be the best with HTML...</p>
+    </div>
+
+    <div style="width:100%;height:50px;background-color:darkgray;clear:both;text-align:right;">
+        <p style="line-height:50px;margin-right:50px;" >copyright © here comes your name</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+﻿*{
+    outline:none;
+    margin:0px;
+    padding:0px;
+    font:14px sans-serif;
+}
+.banner {
+    width: 100%;
+    height: 400px;
+    color: white;
+    background-image: url(../images/banner/1.jpg);
+    background-size:1530px 800px;
+   
+}
+.nav{
+    height:35px;
+    border-bottom:1px solid black;
+    background-color: rgba(0,0,0,0.3);
+    
+}
+.logo{
+    float:left;
+    line-height:35px;
+    padding-left:8px;
+}
+.navigation{
+    float:right;
+    line-height:35px;
+}
+.navigation a{
+    font-size:10px;
+    padding-right:10px;
+    padding-left:10px;
+}
+.bigwords{
+    font-size:45px;
+    margin:110px 445px;
+    text-align:center;
+}
+.pratos{
+    text-align:center;
+    clear:both;
+   
+   
+   
+}
+.pratos img {
+    width: 400px;
+    height: 400px;
+    border-radius:5px;
+}
+h1 {
+    font-size: 45px;
+    border-top: 3px solid red;
+    width: 260px;
+    text-align: center;
+    margin: 60px auto;
+    margin-top:100px;
+   
+}
+.pratos p{
+    font-size:18px;
+    margin:8px auto;
+}
+.seg{
+    width:780px;
+    margin:0 auto;
+
+   
+}
+.seg div{
+    width:180px;
+    height:220px;
+    float:left;
+    margin:0 7px;
+   
+}
+.seg h6{
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:10px;
+    text-align:center;
+}
+.seg p{
+    font-size:12px;
+}
+.seg img{
+    width:80px;
+    height:60px;
+    margin-left:50px;
+}

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        // Array
+        var data = [];
+
+        //function of register
+        function register() {
+            data.push(prompt("Please enter your cute name"));
+        }
+
+        //function to list
+        function list() {
+            // Obtain the id display
+            var display = document.getElementById("display");
+
+            //display the paragraph
+            display.innerHTML = "";
+            //display the data of the array
+            for (var index = 0; index < data.length; index++) {
+                display.innerHTML += data[index] + "<br>";
+            }
+        }
+
+        //remove
+        function remove() {
+            var name = prompt("please enter the name that you want to remove");
+
+            //verify if the name exists
+            var exist = false;
+            for (var index = 0; index < data.length; index++) {
+                if (name == data[index]) {
+                    exist = true;
+                    data.splice(index, 1);
+                }
+
+            }
+            if (exit == true) {
+                alert("Name removed with success");
+            } else {
+                alert("Name not found");
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <!-- buttons  -->
+    <button onclick="register()">Register</button>
+    <button onclick="list()">List</button>
+    <button onclick="remove()">Remove</button>
+    <!-- to view the list-->
+    <p id="display"> </p>
+
+
+
+
+
+</body>
+</html>

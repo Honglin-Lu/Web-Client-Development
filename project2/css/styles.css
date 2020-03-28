@@ -1,0 +1,58 @@
+﻿*{
+    font: 14px sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+body{
+    background-image: url("../images/fundo.jpg");
+    background-size:cover;
+}
+form{
+    width:560px;
+    background-color:white;
+    margin:50px auto;
+    border-radius:5px;
+    padding-top:30px;
+}
+
+form h1{
+    text-align:center;
+    font-size:30px;
+    color:grey;
+    margin-bottom:30px;
+}
+form button{
+    width:210px;
+    height:50px;
+    margin-bottom:30px;
+    border-radius:6px;
+    background-color:white;
+    border:1px solid #ccc;
+}
+.left{
+    margin-left:62px;
+    background-color:darkblue;
+    color:white;
+}
+.right{
+    margin-left:15px;
+}
+form input{
+    margin-bottom:23px;
+    margin-left:62px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    height:45px;
+    width:435px;
+}
+form p{
+    color:#ccc;
+    margin-left:62px;
+    margin-bottom:5px;
+}
+.login{
+    background-color:black;
+    color:white;
+   
+}
