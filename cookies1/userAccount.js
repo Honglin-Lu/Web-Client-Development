@@ -18,12 +18,12 @@ function SetCookies() {
 
 function GetCookies() {
     var arr = document.cookie.split('|');
-    //alert(arr.length);
-    console.log(arr);
+    alert(arr.length);
+    //console.log(arr);
 
     for (var i = 0; i < arr.length; i++) {
         var sarr = arr[i].split('=');
         //alert("0: " + sarr[0] + " --- 1:" + sarr[1]);
-        document.getElementById(sarr[0].trim()).innerText = sarr[1];
+        document.getElementById(sarr[0]).innerText = sarr[1];
     }
 }
