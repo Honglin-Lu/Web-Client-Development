@@ -13,12 +13,23 @@
     <form name="login">
         <div>
             <input type="text" placeholder="alex" name="userid" /> <br /><br />
-            <input type="password" name="pswd" /><br /><br />
+            <input type="password" name="pswd" placeholder="vilvert"/><br /><br />
             <input type="button" class="btn btn-success" onclick="check(this.form)" value="Login" /><br /><br />
         </div>
     </form>
 
     <script language="javascript">
+
+        function check(form) {
+            if (form.userid.value == "alex" && form.pswd.value == "vilvert") {
+                window.open('https://www.google.com');// Open the link
+                //window.open("hello.html",  "width=800,height=600");//Opens a new window from a html file
+               // var myWindow = window.open("hello.html", "mywindow", "width=800,height=600");//Opens a new 
+                //myWindow.document.write("<p> This is 'myWindow' </p>");//Text in the new window
+            } else {
+                alert("Please enter the correct user Id and Password");
+            }
+        }
 
     </script>
 </body>

@@ -1,0 +1,14 @@
+﻿div{
+    width:50%;
+    margin:30px auto;
+}
+
+input{
+    margin-bottom:10px;
+}
+
+#btnSave,
+#btnRemove,
+#btnCancel{
+    display:none;
+}
