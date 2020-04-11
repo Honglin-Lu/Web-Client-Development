@@ -3,8 +3,9 @@
 var products = [];
 
 
+
 //Register Function
-function Register() {
+function register() {
 
     //Obtain the data
     var name = document.getElementById("name").value;
@@ -13,12 +14,12 @@ function Register() {
 
     //Register with json
     products.push
-    ({
-        "name": name,
-        "brand": brand,
-        "value": value,
+        ({
+            "name": name,
+            "brand": brand,
+            "value": value,
 
-    })
+        });
 
     //clean fields
     clean();
@@ -51,12 +52,13 @@ function list() {
     var table = document.getElementById("table");
 
     //Clean the table
-    table.innerHTML = "";
+    table.innerHTML = "";//the data before will be shown many times if without this 
 
     //for loop 
     for (var index = 0; index < products.length; index++) {
         //table line
-        var line = table.insertRow(-1);
+        var line = table.insertRow(-1);//The value of -1 can also be used,
+                                       //this results in a new row being inserted at the last position.
 
         //columns
         var column1 = line.insertCell(0);
@@ -76,13 +78,13 @@ function list() {
 }
 
 //function to select the product
-function Select(line) {
+function Select(lineNO) {
 
     //fill the inputs
-    document.getElementById("id").value = line;
-    document.getElementById("name").value = products[line].name;
-    document.getElementById("brand").value = products[line].brand;
-    document.getElementById("value").value = products[line].value;
+    document.getElementById("id").value = lineNO;
+    document.getElementById("name").value = products[lineNO].name;
+    document.getElementById("brand").value = products[lineNO].brand;
+    document.getElementById("value").value = products[lineNO].value;
 
     //show and hide the button
     document.getElementById("btnRegister").style.display = "none";
@@ -107,10 +109,10 @@ var id = document.getElementById("id").value;
 }
 
 function save() {
-    document.getElementById("id").value = line;
-    document.getElementById("name").value = products[line].name;
-    document.getElementById("brand").value = products[line].brand;
-    document.getElementById("value").value = products[line].value;
+    var id = document.getElementById("id").value;
+    var name = document.getElementById("name").value;
+    var brand = document.getElementById("brand").value;
+    var value = document.getElementById("value").value ;
 
     //Change the JSON array
     products[id] = {
