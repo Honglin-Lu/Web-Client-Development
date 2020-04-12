@@ -17,7 +17,7 @@
     width:100%;
     height:530px;
     background-color:#212529;
-    opacity:.5;
+    opacity:.65;
 
 }
 .header .col-sm-8 {
@@ -84,4 +84,15 @@
 }
 .footer p{
     color:#ccc;
+}
+.col-sm-8 .list-group .list-group-item {
+    border:none;
+    border-bottom:1px dotted #ccc;
+}
+.col-sm-8 .list-group .list-group-item a{
+    color:black;
+}
+.col-sm-8 .list-group .list-group-item a:hover, :active{
+    color:dodgerblue;
+    text-decoration:none;
 }
