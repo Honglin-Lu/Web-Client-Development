@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6" style="width:500px;height:300px;margin:150px auto;border:1px solid #ccc;border-radius:5px;padding-top:15px">
+                <h3 style="margin-left:50px">Login College Registration Course</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="honglin" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" name="pwd" id="pwd" placeholder="123456" required />
+                    </div>
+                    <input type="button" class="btn btn-primary" onclick="check(this.form)" value="Enter at system" />
+                </form>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+    <script>
+        function check(form) {
+            if (form.username.value == "honglin" && form.pwd.value == "123456") {
+                window.open("main.html");
+            } else {
+                alert("Please enter the correct username and password!");
+            }
+        }
+    </script>
+
+</body>
+</html>>

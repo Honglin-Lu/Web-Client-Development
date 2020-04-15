@@ -1,0 +1,9 @@
+﻿input {
+    margin-bottom: 10px;
+}
+#btnSave,
+#btnConfirm,
+#btnRemove,
+#btnCancel {
+    display: none;
+}
