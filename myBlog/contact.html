@@ -4,10 +4,14 @@
     <meta charset="utf-8" />
     <title>my blog</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+
 </head>
 <body>
     <div class="header" style="background-image:url(../images/contact.jpg)">
@@ -37,15 +41,12 @@
                                 <a class="nav-link" href="about.html">ABOUT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="blogs.html">BLOGS</a>
+                                <a class="nav-link" href="posts.html">POSTS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">CONTACT</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">LOGIN</a>
-                            </li>
-
+                            
                         </ul>
                     </div>
                 </nav>
@@ -87,12 +88,16 @@
                         <input type="text" class="form-control" id="message" name="message" >
                     </div>
                     <div style="margin-bottom:30px;margin-top:30px">
-                        <input class="btn btn-success" value="SEND" type="submit" id="submit" />
+                        <input class="btn btn-success" value="SEND" type="button" id="send" />
                     </div>
                 </form>
                 
             </div>
-            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
+                <i class="fas fa-clipboard-list icon-swing" id="icon-swing" ></i>
+
+
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -108,11 +113,23 @@
         </div>
     </div>
 
-   
-            <!--<div id="biglayer" style="width:200px;height:100px;border:1px solid #ccc;text-align:center" >
-                <h2>Send Successfully!</h2>
-                <button class="btn btn-primary">OK</button>
-            </div>-->
-     
+    <div class="information-box" id="information-box">
+        <div class="someInfo" >
+            <h5 style="margin-top:20px;margin-left:65px">ALL QUESTIONS</h5>
+            <ol class="info_list">
+                No questions now.
+            </ol>
+        </div>
+    </div>
+    
+    <div class="box" id="box">
+        <div class="box1" id="box1">
+            <h3 style="margin-bottom:40px">Send Successfully!</h3>
+            <button class="btn btn-primary" style="width:90px" onclick="ok()" id="ok">OK</button>
+        </div>
+    </div>
+
+    
+    
 </body>
 </html>

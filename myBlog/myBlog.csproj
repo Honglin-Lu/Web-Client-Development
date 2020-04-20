@@ -68,10 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.html" />
-    <Content Include="blogs.html" />
+    <Content Include="posts.html" />
     <Content Include="contact.html" />
     <Content Include="index.html" />
-    <Content Include="login.html" />
     <Content Include="samplePost.html" />
     <Content Include="script.js" />
     <Content Include="styles.css" />
